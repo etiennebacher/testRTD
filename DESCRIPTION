@@ -13,3 +13,5 @@ RoxygenNote: 7.2.3.9000
 Collate: 
     'fns.R'
     'pl-pr.R'
+URL: https://github.com/etiennebacher/testRTD
+BugReports: https://github.com/etiennebacher/testRTD/issues
