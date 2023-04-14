@@ -63,3 +63,13 @@ DataFrame$get_columns <- function(...) {
 DataFrame$dtypes <- function(...) {
   print("dtypes")
 }
+
+#' Create new DataFrame
+#' @name DataFrame
+#'
+#' @return DataFrame
+#' @keywords DataFrame_new
+
+pl$DataFrame = function() {
+  print("foo")
+}

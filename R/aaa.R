@@ -28,25 +28,6 @@
 .pr$RNullValues = function(foo)
 
 
-# TODO remove export
-
-
-
-#' Give a class method property behavior
-#' @description Internal function, see use in source
-#' @param f a function
-#' @param setter bool, if true a property method can be modified by user
-#' @return function subclassed into c("property","function") or c("setter","property","function")
-method_as_property = function(f, setter=FALSE) {
-  class(f) = if(setter) {
-    c("setter","property","function")
-  } else {
-    c("property","function")
-  }
-  f
-}
-
-
 #' @title The complete polars public API.
 #' @description `pl`-object is a environment of all public functions and class constructors.
 #' Public functions are not exported as a normal package as it would be huge namespace
@@ -75,12 +56,3 @@ method_as_property = function(f, setter=FALSE) {
 #'   "polars public class methods, access via object$method()"
 #' )
 pl = new.env(parent=emptyenv())
-
-
-pl_class_names = sort(
-  c("LazyFrame","Series","LazyGroupBy","DataType","Expr","DataFrame", "PolarsBackgroundHandle",
-    "When", "WhenThen", "WhenThenThen"
-  )
-) #TODO discover all public class automaticly
-
-
