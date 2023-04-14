@@ -1,0 +1,33 @@
+
+### Basic information
+site_name: testRTD
+theme:
+  name: material
+  navigation_depth: 4
+
+### Repo information
+repo_url: https://github.com/etiennebacher/testRTD
+repo_name: testRTD
+
+
+### Plugins
+plugins:
+  - search
+
+### Navigation tree
+nav:
+  - Home: README.md
+  - Reference:
+    - DataFrame:
+        - reference/DataFrame-double-brackets.md
+        - reference/DataFrame-dtypes.md
+        - reference/DataFrame-get_column.md
+        - reference/DataFrame-new.md
+    - Series:
+        - reference/Series-clone.md
+        - reference/Series-panic.md
+        - reference/Series-sleep.md
+    - Other:
+        - reference/dot-pr.md
+        - reference/extendr_method_to_pure_functions.md
+        - reference/pl.md
