@@ -24,15 +24,22 @@ https://etiennebacher.github.io/testRTD/site/
 
 * Can't use pkgdown CI
 
+* I had to manually add a `@usage` tag in the roxygen docs for each function. I don't know if this specific to this example or this will be the case also for polars.
 
 
 ### Requirements
+
+#### `mkdocs-material`
+
+Install it: https://squidfunk.github.io/mkdocs-material/getting-started/#installation
+
+#### Names of .Rd files
 
 To create subsections for each general "class" in "Reference" and to put each Rd file in the good class subsection, the script uses the names of Rd files.
 
 More specifically, it looks for all Rd files that end with `-class` (here `Series-class.Rd` and `DataFrame-class.Rd`) and defines them as subsections. Then, all files starting with `Series-` (except `Series-class.Rd`) will be put in this subsection. Same for files starting with `DataFrame-`.
 
-The remaning files are put in the subsection "Other".
+The remaining files are put in the subsection "Other".
 
 Therefore, it is essential to correctly name the Rd files, which is done with the `@name` parameter in the roxygen doc of the R files.
 
