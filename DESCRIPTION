@@ -1,14 +1,72 @@
-Package: testRTD
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Package: polars
+Title: Polars ported to R
+Version: 0.5.0
+Depends: R (>= 4.1.0)
+Imports: utils, codetools
+Authors@R: 
+    person("Soren", "Welling", , "sorhawell@gmail.com", role = c("aut","cre"))
+Description: This package ports the polars data query library to R.
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3.9000
-URL: https://github.com/etiennebacher/testRTD
-BugReports: https://github.com/etiennebacher/testRTD/issues
+URL: https://github.com/pola-rs/r-polars
+    https://rpolars.r-universe.dev/polars
+Suggests: 
+    devtools,
+    testthat (>= 3.0.0),
+    rextendr,
+    data.table,
+    pkgdown,
+    nanoarrow,
+    arrow,
+    bench,
+    nycflights13,
+    patrick,
+    bit64,
+    knitr,
+    tibble,
+    rmarkdown
+Config/testthat/edition: 3
+Collate: 
+    'utils.R'
+    'extendr-wrappers.R'
+    'after-wrappers.R'
+    'Field.R'
+    'PTime.R'
+    'autocompletion.R'
+    'construction.R'
+    'convert.R'
+    'csv.R'
+    'dataframe__frame.R'
+    'datatype.R'
+    'docs.R'
+    'expr__binary.R'
+    'expr__categorical.R'
+    'expr__datetime.R'
+    'expr__expr.R'
+    'expr__list.R'
+    'expr__meta.R'
+    'expr__string.R'
+    'expr__struct.R'
+    'functions.R'
+    'groupby.R'
+    'ipc.R'
+    'lazy_functions.R'
+    'lazyframe__background.R'
+    'lazyframe__groupby.R'
+    'lazyframe__lazy.R'
+    'namespace.R'
+    'options.R'
+    'parquet.R'
+    'pkg-nanoarrow.R'
+    'rlang.R'
+    'rust_result.R'
+    's3_methods.R'
+    'series__series.R'
+    'translation.R'
+    'vctrs.R'
+    'whenthen.R'
+    'zzz.R'
+Config/rextendr/version: 0.2.0.9000
+VignetteBuilder: knitr

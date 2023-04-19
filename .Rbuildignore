@@ -1,3 +1,14 @@
-^.*\.Rproj$
+^renv$
+^renv\.lock$
+^rpolars\.Rproj$
 ^\.Rproj\.user$
+^_pkgdown\.yml$
 ^docs$
+^pkgdown$
+^\.github$
+^LICENSE\.md$
+^\.vscode$
+^flake.nix$
+^flake.lock$
+^README\.Rmd$
+^NEWS\.0\.md$
